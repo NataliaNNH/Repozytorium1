@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+
+int main()
+{
+	int x, y, z;
+	std::cout<<"podaj 1 liczbe"<<std::endl;
+	std::cin>>x;
+	std::cout<<"podaj 2 liczbe"<<std::endl;
+	std::cin>>y;
+	std::cout<<"podaj 3 liczbe"<<std::endl;
+	std::cin>>z;
+	if(x>y){
+	
+}
