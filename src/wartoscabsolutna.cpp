@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string>
+#include <cmath>
 int main()
 {
 	int x;
@@ -10,7 +10,7 @@ int main()
 	}
 	else
 	{
-	std::cout<<"wartosc bezwgledna to:"<<-x<<std::endl;
+	std::cout<<"wartosc bezwgledna to:"<<abs(x)<<std::endl;
 	}
 return 0;
 	
