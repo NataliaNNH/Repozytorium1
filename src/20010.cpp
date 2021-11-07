@@ -10,5 +10,5 @@ int main()
        i++;
     } while (i<=x);
     std::cout<<"Silnia z liczby "<<x<<" wynosi = "<<silnia<<std::endl;
-    return 0;
+    return 0; 
 }
