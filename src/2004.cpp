@@ -1,26 +1,20 @@
 #include <iostream>
-bool liczbapierwsza(int x)
-{ 
-	if(x<=1)
-		return false;
-			for(int i=2;i*i<=x;i++)
-			if(x%i==0){
-				return false;
-}
-	else		
-				return true;
-		
-			
-}
-	int main()
-{
-	int x;
-		std::cout<<"podaj liczbe"<<std::endl;
-			std::cin>>x;
-				if (liczbapierwsza(x)){
-				std::cout<<x<<"jest"<<std::endl;
-			}	else
-				std::cout<<x<<"nie jest"<<std::endl;
+using namespace std;
 
-					return 0;
+int main() {
+        int a;
+        cout << "podaj liczbe";
+        cin >> a;
+
+if((a==2) || (a==3) || (a==5) || (a==7)){
+        cout<<"jest liczba pierwsza ";
+
+        }else if((a%2==0) || (a%3==0) || (a%5==0) || (a%7==0)) {
+                cout << "nie jest liczba pierwsza";
+        }
+                else {
+        cout << "jest liczba pierwsza";
+        }
+return 0; 
 }
+
