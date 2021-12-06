@@ -4,16 +4,16 @@ using namespace std;
 
 int main ()
 {
-    int x;
+    int n;
     cout<<"Podaj liczbe ";
-    cin>>x;
-    int n[x];
+    cin>>n;
+    int a[n];
     int start;
     cout<<"Od jakiej liczby chcesz zaczac?";
     cin>>start;
-    iota (n, n+10,start);
+    iota (a, a+10,start);
     cout<<"numery ";
-    for (int i:n) 
+    for (int i:a) 
     cout<< ' ' << i;
     cout<<endl;
     
