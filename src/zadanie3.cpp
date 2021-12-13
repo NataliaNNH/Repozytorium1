@@ -14,12 +14,12 @@ auto main() -> int
 	std::cout<<imie<<"jest dłuższe!";
 	} else{
 	    
-	if(imie<drugieimie){
+	if(imie==drugieimie){
+	    std::cout<<"Imiona są tej samej długości...";
 	    
-	    std::cout<<drugieimie<<"jest dłuższe.";
 	}
 	    else{
-	        std::cout<<"Imiona są tej samej długości...";
+	        std::cout<<drugieimie<<"jest dłuższe.";
 	        }
         }
 	return 0;
