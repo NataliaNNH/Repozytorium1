@@ -9,17 +9,17 @@ auto main() -> int
 	std::cout<<"Podaj drugie imie"<<std::endl;
 	std::cin>>drugieimie;
 	
-	if(imie>drugieimie)
+	if(imie.size()>drugieimie.size())
 	{
-	std::cout<<imie<<"jest dłuższe!";
+	std::cout<<imie<<" jest dłuższe!";
 	} else{
 	    
-	if(imie==drugieimie){
+	if(imie.size()==drugieimie.size()){
 	    std::cout<<"Imiona są tej samej długości...";
 	    
 	}
 	    else{
-	        std::cout<<drugieimie<<"jest dłuższe.";
+	        std::cout<<drugieimie<<" jest dłuższe.";
 	        }
         }
 	return 0;
