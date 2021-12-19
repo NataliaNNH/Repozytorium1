@@ -12,7 +12,7 @@ int main()
         std::cin>>imie[i];
 }
     for (int i=0; i<5; i++){
-    if (imie[i].back == 'a' || imie[i].back == 'A'){
+    if (imie[i].back() == 'a' || imie[i].back() == 'A'){
         z++;
     }
     else{
