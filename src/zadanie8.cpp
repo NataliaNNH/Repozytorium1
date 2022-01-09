@@ -5,7 +5,7 @@ int main()
     std::string x;
     int n;
     
-    std::cout << "podaj slowo " <<std::endl;
+    std::cout << "Podaj słowo" <<std::endl;
     std::cin >> x;
     std::cout<<"Co ile liter?"<<std::endl;
     std::cin>>n;
