@@ -1,8 +1,7 @@
 #include <iostream>
 #include <string>
-using namespace std;
 
-int count(string s, char znak)
+int count( std::string s, char znak)
 {
  
     int ilerazy = 0;
@@ -16,10 +15,11 @@ int main()
 {
     
   
-    string s;  
-    cin>>s;
-    char znak;
-    cin>>znak;
-    cout << count(s, znak) << endl;
+    std::string s;  
+     std::cin>>s;
+     char znak;
+     std::cin>>znak;
+     std::cout <<count(s, znak)<< std::endl;
     return 0;
 }
+

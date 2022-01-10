@@ -3,7 +3,7 @@
  
 std::string is_palindrome(std::string slowo) // funkcja sprawdzająca czy słowo jest palindromem
 {
-    std::cout<<"Podaj slowo";
+    std::cout<<"Podaj slowo: ";
     std::cin>>slowo;
     std::string odwrocone = slowo; // przechowuje w zmiennej odwrocone dane ze zmiennej "slowo"
     
