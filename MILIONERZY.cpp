@@ -1,5 +1,4 @@
 #include <iostream>
-
 #include <string>
 #include <cstring>
 #include <stdlib.h>
@@ -35,7 +34,7 @@ void Pomoc();
 bool koloR1=false, koloR2=false, koloR3=false;
 int i,j;
 char pause;
-void wznowienie();
+void koniec();
 class Menu
 {
 public:
@@ -50,14 +49,15 @@ public:
 main(){
     system("color 1"); // kolor tla i tekstu w tym przypadku tylko tekst zostal zmieniony
     Gra();
-    wznowienie();
+    koniec();
     return 0;
 }
 
 void Gra(){
     Menu wyswietl;
     for(i=0; i<12; i++){
-    do{ system("cls");
+    do{
+    system("cls");
     wyswietl.MenuWYS(); //wyswietla baner z "milionerzy"
     std::cout<<"\nPytanie numer"<<" "<<(i+1)<<"/"<<"12"<<"\t\t\t"<<"Do wygrania "<<Wygrana[i]<<" zlotych"<<"\n"<<std::endl; // wylicza ktore jest to juz pytanie
     std::cout<<Pytanie[i]<<std::endl;
@@ -79,17 +79,17 @@ void Gra(){
     {
     std::cout<<"\nOdpowiedz poprawna! Gratuluje. \n"<<std::endl;
     std::cout<<"Wcisnij ENTER aby kontynuowac"<<std::endl;
-    pause=getch(); //
+     pause=getch(); //
     }
     else
     {
-        if(Wybor=='e'){ //ale jezeli uczestnik wybierze 'e'
-        Pomoc();} //wyswietlaja sie kola ratunkowe
+        if(Wybor=='e') //ale jezeli uczestnik wybierze 'e'
+        {Pomoc();} //wyswietlaja sie kola ratunkowe
         else{
         std::cout<<"\n Niestety jest to bledna odpowiedz\n"<<std::endl; //jezeli wybor rozni sie od poprawnej odpowiedzi to
         std::cout<<"Wcisnij ENTER aby odebrac swoje pieniadze"<<std::endl;
         pause=getch();
-        break;
+       break;
         } //petla do while dopoki nie podano zlej odpowiedzi
     }
     system("cls"); //czyszczenie 'ekranu',
@@ -102,7 +102,8 @@ void Pomoc()
 Menu wyswietl;
 char c;
 std::string drugaodp=mozliwosci[rand() % 4][i]; // generuje liczbe od 0-3
-do{ system("cls");
+do{
+system("cls");
 wyswietl.MenuWYS();
 std::cout<<"\n KOLO RATUNKOWE!\n"<<std::endl;
 std::cout<<"0.$ Nie chce kola ratunkowego"<<std::endl;
@@ -182,7 +183,7 @@ i=i-1;
     return;
 }//Pomoc
 
-void wznowienie(){
+void koniec(){
     system("cls"); //czysci
     Menu wyswietl;
 wyswietl.MenuWYS();
